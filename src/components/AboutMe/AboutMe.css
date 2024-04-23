@@ -1,0 +1,14 @@
+
+
+   
+        .content {
+            width: 50vw;
+            height: 50vh;
+            margin: 10% auto;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden; /* Oculta el brillo que se desborda */
+            background: #000000; /* Ajusta según sea necesario */
+        }
+
+       
