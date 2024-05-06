@@ -3,10 +3,21 @@ function AboutMe() {
   return (
     <>
     <div className="content neon-border">
-        <h2> Hello world... </h2>
-        <h3>I'm Daniela Romero</h3>
+     <div className='photo-profile'>
+         <img src="src\assets\me.jpeg" alt="" style={{ width: '300px', height: '300px', borderRadius: '50%', objectFit: 'cover' }} />
+      </div>
+      <div className='content-right'>
+
+        <h3> Hello world... </h3>
+        <h1>I'm Daniela Romero</h1>
         <h3>Full Stack developer</h3>
-        <h5>   and a lover of freedom, creativity and colors.</h5>
+        
+        <p>and a lover of freedom, creativity and colors.</p>
+        <div className='icons-div'>
+          <img src="src\assets\icons8-github-50.png" alt="" />
+          <img src="src\assets\icons8-linkedin-50.png" alt="" />
+        </div>
+      </div>
     </div>
     </>
   )
