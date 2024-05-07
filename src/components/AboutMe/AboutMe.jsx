@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './AboutMe.css'
 function AboutMe() {
   return (
@@ -8,14 +9,18 @@ function AboutMe() {
       </div>
       <div className='content-right'>
 
-        <h3> Hello world... </h3>
-        <h1> I am Daniela Romero</h1>
+        <h3> Hello world ... </h3>
+        <h1> I'm Daniela Romero</h1>
         <h3>Full Stack developer</h3>
         
         <p>and a lover of freedom, creativity and colors.</p>
         <div className='icons-div'>
-          <img src="src\assets\icons8-github-50.png" alt="" />
-          <img src="src\assets\icons8-linkedin-50.png" alt="" />
+          <Link to="https://github.com/bqcount" className='network-links'>
+          <img src="src\assets\icons8-github-50.png" alt="" className='git-linkedn' />
+          </Link>
+          <Link to="https://es.linkedin.com/in/daniela-romero-garcia" className='network-links'>
+          <img src="src\assets\icons8-linkedin-50.png" alt="" className='git-linkedn' />
+          </Link>
         </div>
       </div>
     </div>

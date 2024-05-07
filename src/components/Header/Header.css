@@ -6,11 +6,18 @@
     font-family: 'Times New Roman', Times, serif;
 }
 .link-header{
-    text-decoration: none;
-    color: white;
-    text-shadow: 0 0 10px rgba(11, 217, 217, 0.9);
-}
+
+  
+  }
 
 .link-header:hover{
-    text-shadow: 0 0 50px rgb(143, 235, 235);
+    text-shadow:
+    0 0 10px #fff, /* Inner glow (white) */
+    0 0 20px #f0f, /* Outer glow (lighter blue) */
+    0 0 20px rgb(239, 101, 216); /* Outer glow (darker blue) */
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }

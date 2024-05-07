@@ -32,3 +32,21 @@
     justify-content: center;
     gap: 8%;
 }
+a{
+    text-decoration: none;
+    
+}
+
+.network-links{
+    border-radius: 100%;
+}
+.git-linkedn{
+    
+    border-radius: 100%;
+}
+.git-linkedn:hover{
+    box-shadow:
+    0 0 4px #fff, /* Inner glow (white) */
+    0 0 10px #f0f, /* Outer glow (lighter blue) */
+    0 0 20px rgb(239, 101, 216); /* Outer glow (darker blue) */
+}
