@@ -9,7 +9,7 @@ function AboutMe() {
       <div className='content-right'>
 
         <h3> Hello world... </h3>
-        <h1>I'm Daniela Romero</h1>
+        <h1> I am Daniela Romero</h1>
         <h3>Full Stack developer</h3>
         
         <p>and a lover of freedom, creativity and colors.</p>
