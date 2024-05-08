@@ -5,26 +5,29 @@
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    /* Oculta el brillo que se desborda */
     background: #000000;
-    /* Ajusta según sea necesario */
     display: flex;
     justify-content: space-around;
    
 
 }
 
-.photo-profile{
-    width: 200px; /* Ancho deseado */
-    height: 200px; /* Alto deseado */
-    border-radius: 50%; /* Para hacer la imagen redonda, si lo deseas */
-    object-fit: cover; /* Para mantener las proporciones de la imagen */
+
+.content-left{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 
 }
 .content-right{
     width: 60%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 
 .icons-div{
@@ -46,7 +49,7 @@ a{
 }
 .git-linkedn:hover{
     box-shadow:
-    0 0 4px #fff, /* Inner glow (white) */
-    0 0 10px #f0f, /* Outer glow (lighter blue) */
-    0 0 20px rgb(239, 101, 216); /* Outer glow (darker blue) */
+    0 0 4px #fff,
+    0 0 10px #f0f,
+    0 0 20px rgb(239, 101, 216);
 }
