@@ -3,10 +3,10 @@ import './AboutMe.css'
 function AboutMe() {
   return (
     <>
-    <div className="content neon-border">
+    <div className="content ">
     <div className='content-left'>
 
-         <img src="src\assets\me.jpeg" alt="" style={{ width: '300px', height: '300px', borderRadius: '50%', objectFit: 'cover' }} />
+         <img src="src\assets\me.jpeg" alt="" className='me-image'/>
 
       </div>
       <div className='content-right'>
