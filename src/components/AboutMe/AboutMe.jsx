@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import './AboutMe.css'
+
+
 function AboutMe() {
   return (
     <>
@@ -12,13 +14,13 @@ function AboutMe() {
       <div className='content-right'>
         <div>
 
-        <h3> Hello world ... </h3>
-        <h1> I'm Daniela Romero</h1>
+        <h3 className='h3-hello-world'> Hello world ... </h3>
+        <h1 className='h1-name'> I'm Daniela Romero</h1>
         <div  className="glow-on-hover">
-          <h3>Full Stack developer</h3>
+          <h3 className='h3-fullstack'>Full Stack developer</h3>
         </div>
 
-        <p>and a lover of freedom, creativity and colors.</p>
+        <p>Passionate about novelty and creativity.</p>
         <div className='icons-div'>
           <Link to="https://github.com/bqcount" className='network-links'>
           <img src="src\assets\icons8-github-50.png" alt="" className='git-linkedn' />
