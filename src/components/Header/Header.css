@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: end;
     gap: 5%;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 .link-header{
 
@@ -26,7 +26,7 @@ a{
     cursor: pointer;
   }
 
-@media  (min-width: 344px) and (max-width:596px) {
+@media  (min-width: 344px) and (max-width:700px) {
     .fragment-header{
         display: flex;
         justify-content: flex-end;

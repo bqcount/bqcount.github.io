@@ -31,15 +31,10 @@ function AboutMe() {
         </div>
       </div>
     </div>
+    <button className='button-contact'>Contact me</button>
         </div>
    
 
-    {/*   <div className="holder">  
-        <div className="bar1 left"></div>
-        <div className="bar top"></div>
-        <div className="bar1 right"></div>
-        <div className="bar bottom"></div>
-      </div> */}
     </div>
   )
 }
