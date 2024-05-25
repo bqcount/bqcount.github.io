@@ -4,7 +4,7 @@ import './AboutMe.css'
 
 function AboutMe() {
   return (
-    <>
+    <div className='father-content'>
     <div className="content ">
     <div className='content-left'>
 
@@ -40,7 +40,7 @@ function AboutMe() {
         <div className="bar1 right"></div>
         <div className="bar bottom"></div>
       </div> */}
-    </>
+    </div>
   )
 }
 

@@ -77,10 +77,17 @@ a{
     
  }
 /* Mobile first */
-@media  (min-width: 350px) and (max-width: 530px) {
+@media  (min-width: 344px) and (max-width: 596px) {
+    .father-content{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .content {
         width: 90%;
-        height: 66vh;
+        height: 100%;
         margin: 10% auto;
         border-radius: 10px;
         position: relative;
@@ -88,19 +95,23 @@ a{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        margin-top: 40%;
         
     }
     .content-left {
-        height: 35%;
+        height: 40%;
         display: flex;
-        align-items: center;
+        align-items: stretch;
         justify-content: center;
     }
     .content-right {
         width: 100%;
+        height: 60%;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
+        margin-top: 7%;    
     }
     .me-image{
         width:150px;

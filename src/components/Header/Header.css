@@ -26,7 +26,7 @@ a{
     cursor: pointer;
   }
 
-@media  (min-width: 350px) and (max-width: 530px) {
+@media  (min-width: 344px) and (max-width:596px) {
     .fragment-header{
         display: flex;
         justify-content: flex-end;
