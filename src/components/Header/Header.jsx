@@ -17,9 +17,7 @@ function Header() {
       <Link to='/projects' className='link-header'>
          <h3 className='linterna'>Projects</h3>
       </Link>
-      <Link to='/aboutme' className='link-header'>
-        <h3 className='linterna'>Contact</h3>
-      </Link>
+    
     </div>
     </div>
   )

@@ -21,7 +21,12 @@ function AboutMe() {
         </div>
 
         <p>Passionate about novelty and creativity.</p>
+        <div className='div-contact'>
+        <button className='button-contact'>Contact me</button>
+        </div>
         <div className='icons-div'>
+ 
+
           <Link to="https://github.com/bqcount" className='network-links'>
           <img src="src\assets\icons8-github-50.png" alt="" className='git-linkedn' />
           </Link>
@@ -31,7 +36,6 @@ function AboutMe() {
         </div>
       </div>
     </div>
-    <button className='button-contact'>Contact me</button>
         </div>
    
 

@@ -163,7 +163,10 @@ a{
      .button-contact {
         display: block;
      }
-   
+     .div-contact{
+        display: flex;
+        justify-content: center;
+     }
  
 }
 
@@ -198,8 +201,8 @@ a{
         margin-top: 7%;    
     }
     .me-image{
-        width:150px;
-        height:150px; 
+        width:170px;
+        height:170px; 
         border-radius:50%; 
         object-fit: cover; 
      }
@@ -209,10 +212,19 @@ a{
      .button-contact {
         display: block;
      }
+     .div-contact{
+        display: flex;
+        justify-content: center;
+     }
    
 }
 
 @media  (min-width: 701px) and (max-width: 900px) {
+    .father-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .content {
         width: 90%;
         height: 100%;
@@ -241,28 +253,87 @@ a{
         
     }
     .me-image{
-        width:230px;
-        height:230px; 
+        width:250px;
+        height:250px; 
         border-radius:50%; 
         object-fit: cover; 
      }
      .icons-div{
         display: none;
      }
+     .button-contact {
+        display: block;
+     }
+     .div-contact{
+        display: flex;
+        justify-content: center;
+     }
 }
-        @media (min-width: 1500px) {
+        @media (min-width: 901px) and (max-width: 1257px) {
             .content-left{
-                width: 35%;
+                width: 45%;
                 height: 100%;
                 display: flex;
+                justify-content: center;
                 align-items: center;
             
             }
+            .me-image{
+                width:230px;
+                height:230px; 
+                border-radius:50%; 
+                object-fit: cover; 
+             }
             .content-right{
                 height: 100%;
+                width: 55%;
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content:center;
             }
+            .icons-div{
+                display: none;
+             }
+             .button-contact {
+                display: block;
+             }
+             .div-contact{
+                display: flex;
+                justify-content: center;
+             }
+            
+          }
+          @media (min-width: 1258px)  {
+            .content-left{
+                width: 45%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            
+            }
+            .me-image{
+                width:300px;
+                height:300px; 
+                border-radius:50%; 
+                object-fit: cover; 
+             }
+            .content-right{
+                height: 100%;
+                width: 55%;
+                display: flex;
+                align-items: center;
+                justify-content:flex-start;
+            }
+            .icons-div{
+                display: none;
+             }
+             .button-contact {
+                display: block;
+             }
+             .div-contact{
+                display: flex;
+                justify-content: center;
+             }
             
           }
