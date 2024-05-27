@@ -6,7 +6,9 @@ import { MdApps } from "react-icons/md";
 function Header() {
   return (
     <div className='fragment-header'>
+      <Link to='/menu'>
       <MdApps className='menu-icon ' />   
+      </Link>
     <div className="header">
       <Link to='/experience' className='link-header'>
         <h3 className='linterna'>Home</h3>
