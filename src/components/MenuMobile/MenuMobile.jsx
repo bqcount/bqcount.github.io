@@ -2,10 +2,12 @@ import { FaCode } from "react-icons/fa";
 import { FaBookReader } from "react-icons/fa";
 import { RiContactsBook3Fill } from "react-icons/ri";
 import './MenuMobile.css';
+import { Link} from "react-router-dom";
 
 function MenuMobile() {
   return (
     <div className="content-menu">
+      <Link to='/projects'>
         <div className="menu-item">
             <div className="div-icon ">
               <FaCode/>
@@ -14,6 +16,7 @@ function MenuMobile() {
             Projects
             </div>
         </div>
+      </Link>
         <div className="menu-item">
             <div className="div-icon">
               <FaBookReader/>
@@ -30,6 +33,7 @@ function MenuMobile() {
             Contact me
             </div>
         </div>
+      
     </div>
   );
 }
