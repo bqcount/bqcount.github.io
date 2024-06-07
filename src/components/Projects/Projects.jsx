@@ -1,12 +1,7 @@
 import './Projects.css'
-import { useState,useEffect } from 'react'
 
 
 function Projects() {
-  const [showInfo, setShowInfo] = useState('');
-  const infoShow = "info-show"
-
- 
 
   
   return (
