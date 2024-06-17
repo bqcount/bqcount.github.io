@@ -1,28 +1,39 @@
-import './Projects.css'
-
+import "./Projects.css";
 
 function Projects() {
-
-  
   return (
-    <div className='content-projects'>
-  
-        <div className="card">
-          <div className='div-img'>
-             <img src="src\assets\logocompicar.png" alt="" className='img-project' />
-          </div>
-        
+    <div className="content-projects">
+      <div className="card">
+        <div className="div-img">
+          <img
+            src="src\assets\logocompicar.png"
+            alt=""
+            className="img-project"
+          />
         </div>
-        
-        <div className="card">
-          <div className='div-img'>
-             <img src="src\assets\bloodyrun.png" alt="" className='img-project' />
-          </div>
-          
-          
+        <div className="div-button-info">
+          <button className="button-info">More info</button>
         </div>
+      </div>
+
+      <div className="card">
+        <div className="div-img">
+          <img src="src\assets\ludohana.png" alt="" className="img-project" />
+        </div>
+        <div className="div-button-info">
+          <button className="button-info">More info</button>
+        </div>
+      </div>
+      <div className="card">
+        <div className="div-img">
+          <img src="src\assets\bloodyrun.png" alt="" className="img-project" />
+        </div>
+        <div className="div-button-info">
+          <button className="button-info">More info</button>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Projects
+export default Projects;
