@@ -5,11 +5,7 @@ function Projects() {
     <div className="content-projects">
       <div className="card">
         <div className="div-img">
-          <img
-            src="src\assets\logocompicar.png"
-            alt=""
-            className="img-project"
-          />
+          <img src="src/assets/COMPICAR.png" alt="" className="img-project" />
         </div>
         <div className="div-button-info">
           <button className="button-info">More info</button>
@@ -18,7 +14,7 @@ function Projects() {
 
       <div className="card">
         <div className="div-img">
-          <img src="src\assets\ludohana.png" alt="" className="img-project" />
+          <img src="src/assets/ludohana.png" alt="" className="img-project" />
         </div>
         <div className="div-button-info">
           <button className="button-info">More info</button>
@@ -26,7 +22,7 @@ function Projects() {
       </div>
       <div className="card">
         <div className="div-img">
-          <img src="src\assets\bloodyrun.png" alt="" className="img-project" />
+          <img src="src/assets/bloodyrun.png" alt="" className="img-project" />
         </div>
         <div className="div-button-info">
           <button className="button-info">More info</button>

@@ -4,6 +4,7 @@ import MainLayout from '../Layout/MainLayout'
 import AboutMe from '../components/AboutMe/AboutMe'
 import MenuMobile from '../components/MenuMobile/MenuMobile'
 import Projects from '../components/Projects/Projects'
+import MoreInfo from '../components/MoreInfo/MoreInfo'
 
 
 
@@ -25,7 +26,13 @@ const router = createBrowserRouter([
             
             {
                 path:'/projects',
-                element:<Projects/>
+                element:<Projects/>,
+                children:[
+                    {
+                        path:'/moreinfo',
+                        element:<MoreInfo/>,
+                    },
+                ]
             }
          
         ]
