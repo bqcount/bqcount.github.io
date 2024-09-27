@@ -1,54 +1,60 @@
 .content-projects {
   width: 100%;
-  height: 100vh; /* Vista completa */
+  max-width: 1200px; /* Limitar el ancho total a tres tarjetas por fila */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow-y: auto; /* Habilitar desplazamiento vertical */
-  padding: 10px; /* Agregar relleno para el scroll */
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribuir espacio uniformemente entre tarjetas */
+  gap: 20px;
+  padding: 20px;
+  margin: 0 auto; /* Centrar el contenedor */
 }
 
 .card {
-  width: 70%;
-  height: 50vh;
+  flex-basis: calc(33.333% - 20px); /* Cada tarjeta ocupa un tercio del ancho disponible */
+  max-width: 300px; /* Limitar el ancho máximo de cada tarjeta */
+  height: 350px;
   background-color: rgba(25, 25, 26, 0.8);
-  margin-top: 10%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .div-img {
   width: 100%;
-  height: 80%; /* Altura fija para las imágenes */
+  height: 80%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
 .img-project {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
-  object-position: center; 
-
+  object-fit: cover;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .div-button-info {
   width: 100%;
-  height: 10%;
+  height: 20%;
   display: flex;
   justify-content: center;
+  padding: 10px;
 }
 
 .button-info {
   border-radius: 8px;
-  height: 25px;
-  width: 90px;
+  height: 35px;
+  width: 100px;
   background-image: url("../../assets/background-gradient-lights.jpg");
   background-size: cover;
   color: white;
@@ -59,89 +65,7 @@
   transition: background-color 0.3s, transform 0.3s;
 }
 
-@media  (min-width: 344px) and (max-width: 500px) {
-  .card {
-    width: 70%;
-    background-color: rgba(25, 25, 26, 0.8);
-    margin-top: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  .div-img {
-    width: 100%;
-    height: 70%; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-  .div-button-info {
-    width: 100%;
-    height: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .img-project {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    object-position: center; 
-  
-  } 
-  .img-compicar {
-    width: 160px;
-    height: 160px;
-    object-fit: cover; 
-    object-position: center; 
-  
-  }
-
-}
-
-@media  (min-width: 501px) and (max-width: 700px) {
-  .card {
-    width: 52%;
-    background-color: rgba(25, 25, 26, 0.8);
-    margin-top: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  .div-img {
-    width: 100%;
-    height: 70%; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-  .div-button-info {
-    width: 100%;
-    height: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .img-project {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    object-position: center; 
-  
-  } 
-  .img-compicar {
-    width: 160px;
-    height: 160px;
-    object-fit: cover; 
-    object-position: center; 
-  
-  }
+.button-info:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
 }
