@@ -10,7 +10,7 @@ function Header() {
       <MdApps className='menu-icon ' />   
       </Link>
     <div className="header">
-      <Link to='/experience' className='link-header'>
+      <Link to='/' className='link-header'>
         <h3 className='linterna'>Home</h3>
       </Link>
       <Link to='/experience' className='link-header'>
