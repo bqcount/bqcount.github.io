@@ -53,18 +53,18 @@ function Projects() {
               <h3 className="textDescription">{project.description}</h3>
               <div className="divIconsProject">
               {project.web && (
-                  <a href={project.web} target="_blank" rel="noopener noreferrer">
+                  <a className="link-header" href={project.web} target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faGlobe} size="2x" />
                   </a>
                 )}
                 {project.linkgit && (
-                  <a href={project.linkgit} target="_blank" rel="noopener noreferrer">
+                  <a className="link-header" href={project.linkgit} target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faGithub} size="2x" />
                   </a>
                 )}
               </div>
             </div>
-            <button onClick={() => handleFlip(index)}>Go Back</button>
+            <button className="button-info" onClick={() => handleFlip(index)}>Go Back</button>
           </div>
         </div>
       ))}

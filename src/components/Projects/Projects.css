@@ -71,7 +71,7 @@
 .divIconsProject{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   
 }
 .div-img {
@@ -114,4 +114,54 @@
 .button-info:hover {
   background-color: rgba(255, 255, 255, 0.2);
   transform: translateY(-3px);
+}
+
+
+.divIconsProject a {
+  margin: 0 10px;
+  color: #fffefe; /* Color de los íconos */
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 10px;
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+.divIconsProject a::before {
+  content: '';
+  position: absolute;
+  top: 3px; /* Ajustar para centrar verticalmente */
+  left: 4px; /* Ajustar para centrar horizontalmente */
+  width: calc(60% + 10px); /* Aumentar el tamaño total del aro */
+  height: calc(60% + 10px); /* Aumentar el tamaño total del aro */
+  border: 1px solid transparent;
+  border-radius: 50%;
+  animation: rotateGlow 3s linear infinite;
+  transition: all 0.3s ease;
+}
+
+
+.link-header:hover::before {
+  border-color: rgba(239, 101, 216, 0.7); /* Color del aro */
+  box-shadow: 0 0 10px #fff, /* Brillo interior */
+              0 0 20px rgb(157, 42, 228), /* Brillo exterior */
+              0 0 30px rgba(195, 67, 230, 0.7); /* Luz más intensa */
+}
+
+.link-header:hover {
+  color: rgba(157, 42, 228); /* Cambia el color del ícono */
+  text-shadow: 
+    0 0 10px #fff, /* Brillo interior */
+    0 0 20px #f0f, /* Brillo exterior */
+    0 0 30px rgba(239, 101, 216, 0.7); /* Luz más intensa */
+}
+
+@keyframes rotateGlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg); /* El aro gira 360 grados */
+  }
 }
