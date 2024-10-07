@@ -142,14 +142,14 @@
 }
 
 
-.link-header:hover::before {
+.divIconsProject a:hover::before {
   border-color: rgba(239, 101, 216, 0.7); /* Color del aro */
   box-shadow: 0 0 10px #fff, /* Brillo interior */
               0 0 20px rgb(157, 42, 228), /* Brillo exterior */
               0 0 30px rgba(195, 67, 230, 0.7); /* Luz más intensa */
 }
 
-.link-header:hover {
+.divIconsProject a:hover {
   color: rgba(157, 42, 228); /* Cambia el color del ícono */
   text-shadow: 
     0 0 10px #fff, /* Brillo interior */
