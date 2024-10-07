@@ -5,13 +5,13 @@
   flex-wrap: wrap;
   justify-content: space-between; /* Distribuir espacio uniformemente entre tarjetas */
   gap: 20px;
-  padding: 20px;
+  padding-top: 80px;
   margin: 0 auto; /* Centrar el contenedor */
 }
 
 .card {
-  flex-basis: calc(33.333% - 20px); /* Cada tarjeta ocupa un tercio del ancho disponible */
-  max-width: 300px; /* Limitar el ancho máximo de cada tarjeta */
+  flex-basis: calc(33.333% - 20px); 
+  max-width: 300px; 
   height: 350px;
   background-color: rgba(25, 25, 26, 0.8);
   display: flex;
@@ -49,7 +49,7 @@
 
 .card-back {
   transform: rotateY(180deg); 
-  background-color: #ececec;
+
 }
 
 .card.flipped .card-front {
@@ -60,9 +60,23 @@
   transform: rotateY(0deg); /* Se muestra la cara trasera */
 }
 
+.textDescription{
+  font-weight: lighter;
+  font-size: medium;
+  text-align: justify;
+  padding-left: 10%;
+  padding-right: 10%;
+
+}
+.divIconsProject{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
 .div-img {
   width: 100%;
-  height: 80%;
+  height: 90%;
   display: flex;
   justify-content: center;
 }
@@ -77,7 +91,7 @@
 
 .div-button-info {
   width: 100%;
-  height: 20%;
+  height: 10%;
   display: flex;
   justify-content: center;
   padding: 10px;

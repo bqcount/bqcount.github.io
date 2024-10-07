@@ -1,5 +1,33 @@
 import { useState } from "react";
 import "./Projects.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+
+// Simulamos el JSON con datos de los proyectos
+const projects = [
+  {
+    name: "Compicar",
+    image: "src/assets/logocompicar.png",
+    description: "The social network that connects you with fellow travelers to the same destination. If you don't have a vehicle, Compicar takes you further - sharing is the beginning of the journey!",
+    linkgit: "https://github.com/bqcount/CompicarApp",
+    web: ""
+  },
+  {
+    name: "LudOhana",
+    image: "src/assets/ludohana.png",
+    description: "Where learning and family fun go hand in hand. We organize fun-filled educational events that strengthen family bonds and foster collaboration from a young age. Join us in this adventure of growth and connection!",
+    linkgit: "https://github.com/judifede/LudOhana",
+    web: "https://ludohana.zeabur.app/"
+  },
+  {
+    name: "Bloody Run",
+    image: "src/assets/bloodyrun.png",
+    description: "PC Video Game: On a stormy night in the 19th century, guide the vampire Countess Raven back to her castle before dawn. Dodge the storm's lightning and survive the relentless sun - will you manage to get her to safety before it's too late?",
+    linkgit: "https://github.com/Yoel96/Bloody-Run",
+    web: "https://yoel96.github.io/Bloody-Run/"
+  }
+];
 
 function Projects() {
   const [flippedCard, setFlippedCard] = useState(null);
@@ -10,69 +38,36 @@ function Projects() {
 
   return (
     <div className="content-projects">
-      {/* Tarjeta 1 */}
-      <div className={`card ${flippedCard === 1 ? 'flipped' : ''}`}>
-        <div className="div-img card-front">
-          <img src="src/assets/logocompicar.png" alt="" className="img-project" />
-          <div className="div-button-info">
-            <button id="compicar-info" className="button-info" onClick={() => handleFlip(1)}>
-              More info
-            </button>
+      {projects.map((project, index) => (
+        <div className={`card ${flippedCard === index ? 'flipped' : ''}`} key={index}>
+          <div className="div-img card-front">
+            <img src={project.image} alt={project.name} className="img-project" />
+            <div className="div-button-info">
+              <button className="button-info" onClick={() => handleFlip(index)}>
+                More info
+              </button>
+            </div>
+          </div>
+          <div className="card-back">
+            <div className="description">
+              <h3 className="textDescription">{project.description}</h3>
+              <div className="divIconsProject">
+              {project.web && (
+                  <a href={project.web} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faGlobe} size="2x" />
+                  </a>
+                )}
+                {project.linkgit && (
+                  <a href={project.linkgit} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faGithub} size="2x" />
+                  </a>
+                )}
+              </div>
+            </div>
+            <button onClick={() => handleFlip(index)}>Go Back</button>
           </div>
         </div>
-        <div className="card-back">
-          <h2>Back Side of Project 1</h2>
-          <button onClick={() => handleFlip(1)}>Go Back</button>
-        </div>
-      </div>
-
-      {/* Tarjeta 2 */}
-      <div className={`card ${flippedCard === 2 ? 'flipped' : ''}`}>
-        <div className="div-img card-front">
-          <img src="src/assets/ludohana.png" alt="" className="img-project" />
-          <div className="div-button-info">
-            <button className="button-info" onClick={() => handleFlip(2)}>
-              More info
-            </button>
-          </div>
-        </div>
-        <div className="card-back">
-          <h2>Back Side of Project 2</h2>
-          <button onClick={() => handleFlip(2)}>Go Back</button>
-        </div>
-      </div>
-
-      {/* Repite el patrón para las otras tarjetas */}
-      <div className={`card ${flippedCard === 3 ? 'flipped' : ''}`}>
-        <div className="div-img card-front">
-          <img src="src/assets/bloodyrun.png" alt="" className="img-project" />
-          <div className="div-button-info">
-            <button className="button-info" onClick={() => handleFlip(3)}>
-              More info
-            </button>
-          </div>
-        </div>
-        <div className="card-back">
-          <h2>Back Side of Project 3</h2>
-          <button onClick={() => handleFlip(3)}>Go Back</button>
-        </div>
-      </div>
-
-      {/* Tarjeta 4 */}
-      <div className={`card ${flippedCard === 4 ? 'flipped' : ''}`}>
-        <div className="div-img card-front">
-          <img src="src/assets/bloodyrun.png" alt="" className="img-project" />
-          <div className="div-button-info">
-            <button className="button-info" onClick={() => handleFlip(4)}>
-              More info
-            </button>
-          </div>
-        </div>
-        <div className="card-back">
-          <h2>Back Side of Project 4</h2>
-          <button onClick={() => handleFlip(4)}>Go Back</button>
-        </div>
-      </div>
+      ))}
     </div>
   );
 }
