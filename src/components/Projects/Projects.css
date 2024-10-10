@@ -118,44 +118,32 @@
 
 
 .divIconsProject a {
-  margin: 0 10px;
-  color: #fffefe; /* Color de los íconos */
-  text-decoration: none;
-  position: relative;
   display: inline-block;
-  border-radius: 50%;
-  padding: 10px;
-  transition: all 0.3s ease; /* Transición suave */
+  width: 40px; 
+  height: 40px; 
+  background-color: #ffffff; 
+  border-radius: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px; 
+  transition: all 0.3s ease; 
 }
 
-.divIconsProject a::before {
-  content: '';
-  position: absolute;
-  top: 3px; /* Ajustar para centrar verticalmente */
-  left: 4px; /* Ajustar para centrar horizontalmente */
-  width: calc(60% + 10px); /* Aumentar el tamaño total del aro */
-  height: calc(60% + 10px); /* Aumentar el tamaño total del aro */
-  border: 1px solid transparent;
-  border-radius: 50%;
-  animation: rotateGlow 3s linear infinite;
-  transition: all 0.3s ease;
+.divIconsProject a svg {
+  color: #000000; 
+  font-size: 27px; 
 }
 
-
-.divIconsProject a:hover::before {
-  border-color: rgba(239, 101, 216, 0.7); /* Color del aro */
-  box-shadow: 0 0 10px #fff, /* Brillo interior */
-              0 0 20px rgb(157, 42, 228), /* Brillo exterior */
-              0 0 30px rgba(195, 67, 230, 0.7); /* Luz más intensa */
-}
 
 .divIconsProject a:hover {
-  color: rgba(157, 42, 228); /* Cambia el color del ícono */
-  text-shadow: 
-    0 0 10px #fff, /* Brillo interior */
-    0 0 20px #f0f, /* Brillo exterior */
-    0 0 30px rgba(239, 101, 216, 0.7); /* Luz más intensa */
+  box-shadow: 0 0 35px rgba(246, 8, 238, 0.8); 
+  border-radius: 50%;
+  transform: scale(1.1); 
+  transition: all 0.3s ease; 
 }
+
+
 
 @keyframes rotateGlow {
   0% {
