@@ -1,57 +1,82 @@
+
+
+
 .content-timeline {
     padding-left: 20px;
-}
-
-.experience-content {
+    display: flex;
+    flex-direction: column; /* Asegura que los hijos se apilen verticalmente */
+   
+  }
+  
+  .experience-content {
     display: flex;
     flex-direction: row;
-    align-items: flex-start; /* Alinear en la parte superior */
-    margin-bottom: 40px; /* Espaciado entre experiencias */
+    align-items: flex-start; 
+    justify-content: left;
+    margin-bottom: 10vh; 
     position: relative;
-}
-
-.line {
-    width: 2px;
-    height: 100%;
-    background-color: gray; /* Cambiar el color según tu diseño */
-    position: absolute;
-    left: 10px; /* Ajustar para centrarlo */
-    top: 20px; /* Alinear con el punto */
-}
-
-.point {
-    width: 12px;
-    height: 12px;
-    background-color: yellow; /* Cambiar el color según tu diseño */
-    border-radius: 50%;
-    position: absolute;
-    left: 5px; /* Ajustar para centrarlo con la línea */
-    top: 20px; /* Alinear con el año */
-}
-
-.linepoint {
+  }
+  
+  .linepoint {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: 20px; /* Espacio entre el punto y la descripción */
+    height: 150px; /* Altura del contenedor, ajustar según sea necesario */
+    position: relative;
+  }
+  .linepoint::before {
+    content: '';
+    position: absolute;
+    width: 2px; /* Ancho de la línea */
+    background-color: gray; /* Color de la línea */
+    top: -19px; /* Inicia justo debajo del punto */
+    bottom: -135px; /* Termina justo antes del siguiente punto, ajusta según el espaciado */
+    left: 50%; /* Centra la línea con respecto al punto */
+    z-index: -1; /* La línea debe ir detrás del punto */
+}
+.point {
+    width: 12px;
+    height: 12px;
+    background-color: rgb(246, 8, 238, 1); /* Cambiar el color según tu diseño */
+    border-radius: 50%;
+    position: relative;
+    z-index: 1; /* Asegúrate de que el punto esté por encima de la línea */
 }
 
-.description {
-    margin-left: 50px; /* Espacio a la izquierda del contenido */
-    width: 100%; /* Asegúrate de que ocupe todo el ancho */
+/* Asegúrate de que el año también esté alineado correctamente */
+.left-timeline {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Alinear el año en la parte superior */
+    margin-right: 20px; /* Espacio entre el año y el punto/línea */
 }
 
-.description h2 {
-    color: yellow; /* Cambiar color según tu diseño */
+.left-timeline p {
     margin: 0;
+    padding: 0;
+    color: gray; 
+    width: 15vw;
 }
-
-.description h3 {
+  
+  
+  
+  .description {
+    flex-basis: 50%;
+  }
+  
+  .description h2 {
+    color: rgb(246, 8, 238, 1); /* Cambiar color según tu diseño */
+    margin: 0;
+  }
+  
+  .description h3 {
     margin: 5px 0;
-}
-
-.description p {
+  }
+  
+  .description p {
     margin: 5px 0;
     color: #f0f0f0; /* Cambiar según el diseño */
-}
-
+    text-align: justify;
+  }
+  

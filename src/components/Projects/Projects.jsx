@@ -40,8 +40,11 @@ function Projects() {
     <div className="content-projects">
       {projects.map((project, index) => (
         <div className={`card ${flippedCard === index ? 'flipped' : ''}`} key={index}>
-          <section className="div-img card-front">
-            <img src={project.image} alt={project.name} className="img-project" />
+          <section className=" card-front">
+            <div className="div-img">
+             <img src={project.image} alt={project.name} className="img-project" />
+
+            </div>
             <div className="div-button-info">
               <button className="button-info" onClick={() => handleFlip(index)}>
                 More info
@@ -64,8 +67,10 @@ function Projects() {
                   </a>
                 )}
             </div>
-            
+            <div className="div-button-info">
             <button className="button-info" onClick={() => handleFlip(index)}>Go Back</button>
+
+            </div>
           </section>
         </div>
       ))}
