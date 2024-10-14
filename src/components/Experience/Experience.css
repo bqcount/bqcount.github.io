@@ -2,7 +2,7 @@
 
 
 .content-timeline {
-    padding-left: 20px;
+   
     display: flex;
     flex-direction: column; /* Asegura que los hijos se apilen verticalmente */
    
@@ -31,17 +31,22 @@
     width: 2px; /* Ancho de la línea */
     background-color: gray; /* Color de la línea */
     top: -19px; /* Inicia justo debajo del punto */
-    bottom: -135px; /* Termina justo antes del siguiente punto, ajusta según el espaciado */
-    left: 50%; /* Centra la línea con respecto al punto */
+    bottom: -145px; /* Termina justo antes del siguiente punto, ajusta según el espaciado */
+    left: 40%; /* Centra la línea con respecto al punto */
     z-index: -1; /* La línea debe ir detrás del punto */
 }
 .point {
-    width: 12px;
-    height: 12px;
-    background-color: rgb(246, 8, 238, 1); /* Cambiar el color según tu diseño */
+    width: 10px;
+    height: 10px;
+    background-color: rgb(207, 18, 250); /* Cambiar el color según tu diseño */
     border-radius: 50%;
     position: relative;
     z-index: 1; /* Asegúrate de que el punto esté por encima de la línea */
+    box-shadow: 0 0 25px rgba(246, 5, 238, 1), /* Sombra exterior brillante */
+                0 0 50px rgba(246, 8, 238, 1); /* Sombra exterior difusa */
+    transform: scale(1.2); /* Hace que el punto sea un poco más grande */
+    border: 1px solid rgb(207, 81, 227); /* Borde blanco semi-transparente para un efecto brillante */
+    transition: all 0.3s ease; /* Transiciones suaves */
 }
 
 /* Asegúrate de que el año también esté alineado correctamente */
@@ -79,4 +84,26 @@
     color: #f0f0f0; /* Cambiar según el diseño */
     text-align: justify;
   }
+  #laboral-experience{
+
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    padding-bottom: 5%;
+  }
+  #company{
+
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  
+  }
+
+
+  .exp-title {
+    background-image: url("../../assets/background-gradient-lights.jpg") ;
+    background-size: cover ;
+    background-clip: text ;
+    -webkit-background-clip: text !important;
+    color: transparent !important;
+    margin: 1%;
+    background-position: 30% 70%;
+  }
+  
   

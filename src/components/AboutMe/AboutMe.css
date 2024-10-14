@@ -78,6 +78,7 @@
     -webkit-background-clip: text;
     color: transparent;
     margin: 1%;
+    background-position: 30% 70%;
   }
   
   .h3-fullstack {
