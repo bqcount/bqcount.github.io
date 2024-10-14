@@ -172,7 +172,7 @@
 
  /* Mobile First */
 /* Mobile First */
-@media (min-width: 344px) and (max-width: 596px) {
+@media (min-width: 344px) and (max-width: 595px) {
   .content-projects {
       width: auto;
       min-height: 100vh;

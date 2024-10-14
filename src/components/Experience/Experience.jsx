@@ -27,7 +27,7 @@ function Experience() {
     {
       year: "October 2020-March 2023", // Octubre 2020-Marzo 2023
       title: "Higher Vocational Training in Multiplatform Programming",
-      company: "International Polytechnic Center of Tenerife",
+      company: "CIP Tenerife",
       description:
         "Development of desktop, web and mobile projects using Java and markup languages, with integration of business management systems (Odoo) and version control through GitHub, in addition to managing and administering computer systems.",
     },

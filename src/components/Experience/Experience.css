@@ -106,4 +106,62 @@
     background-position: 30% 70%;
   }
   
+  @media (min-width: 344px) and (max-width: 596px) {
+    .content-timeline {
+   
+      display: flex;
+      flex-direction: column; /* Asegura que los hijos se apilen verticalmente */
+      padding: 0 0 0 0;
+    }
+    
+    .experience-content {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 10vh;
+      position: relative;
+      min-width: 100%;
+  }
+
+  .left-timeline {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    min-width: 20%;
+    padding-right: 1%;
   
+}
+  .description {
+   
+    margin: 0%;
+    min-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.description p{
+  text-align: left;
+}
+.exp-title{
+  text-align: left;
+}
+
+.left-timeline p {
+
+  padding: 5%;
+  
+}
+
+.linepoint::before {
+  content: '';
+  position: absolute;
+  width: 2px; /* Ancho de la línea */
+  background-color: gray; /* Color de la línea */
+  top: -19px; /* Inicia justo debajo del punto */
+  bottom: -38px; /* Termina justo antes del siguiente punto, ajusta según el espaciado */
+  left: 40%; /* Centra la línea con respecto al punto */
+  z-index: -1; /* La línea debe ir detrás del punto */
+}
+  }
