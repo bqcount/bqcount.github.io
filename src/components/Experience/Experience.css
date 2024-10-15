@@ -160,7 +160,7 @@
   width: 2px; /* Ancho de la línea */
   background-color: gray; /* Color de la línea */
   top: -19px; /* Inicia justo debajo del punto */
-  bottom: -38px; /* Termina justo antes del siguiente punto, ajusta según el espaciado */
+  bottom: -308px; /* Termina justo antes del siguiente punto, ajusta según el espaciado */
   left: 40%; /* Centra la línea con respecto al punto */
   z-index: -1; /* La línea debe ir detrás del punto */
 }
