@@ -8,21 +8,21 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 const projects = [
   {
     name: "Compicar",
-    image: "src/assets/logocompicar.png",
+    image: "public/assets/logocompicar.png",
     description: "The social network that connects you with fellow travelers to the same destination. If you don't have a vehicle, Compicar takes you further - sharing is the beginning of the journey!",
     linkgit: "https://github.com/bqcount/CompicarApp",
     web: ""
   },
   {
     name: "LudOhana",
-    image: "src/assets/ludohana.png",
+    image: "public/assets/ludohana.png",
     description: "Where learning and family fun go hand in hand. We organize fun-filled educational events that strengthen family bonds and foster collaboration from a young age. Join us in this adventure of growth and connection!",
     linkgit: "https://github.com/judifede/LudOhana",
     web: "https://ludohana.zeabur.app/"
   },
   {
     name: "Bloody Run",
-    image: "src/assets/bloodyrun.png",
+    image: "public/assets/bloodyrun.png",
     description: "PC Video Game: On a stormy night in the 19th century, guide the vampire Countess Raven back to her castle before dawn. Dodge the storm's lightning and survive the relentless sun - will you manage to get her to safety before it's too late?",
     linkgit: "https://github.com/Yoel96/Bloody-Run",
     web: "https://yoel96.github.io/Bloody-Run/"

@@ -41,7 +41,7 @@ function AboutMe() {
       <header className="sr-only" id="about-me-heading">About Me</header>
       
       <div className="content-left">
-        <img src="src/assets/me.jpeg" alt="Daniela Romero" className="me-image" />
+        <img src="public/assets/me.jpeg" alt="Daniela Romero" className="me-image" />
         <div className="icons-div">
           <a className="link-header" href="https://github.com/bqcount" aria-label="GitHub">
             <FontAwesomeIcon icon={faGithub} size="2x" />
