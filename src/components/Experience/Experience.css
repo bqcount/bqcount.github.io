@@ -4,7 +4,7 @@
 .content-timeline {
    
     display: flex;
-    flex-direction: column; /* Asegura que los hijos se apilen verticalmente */
+    flex-direction: column; 
    
   }
   
@@ -21,40 +21,40 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 20px; /* Espacio entre el punto y la descripción */
-    height: 150px; /* Altura del contenedor, ajustar según sea necesario */
+    margin-right: 20px; 
+    height: 150px; 
     position: relative;
   }
   .linepoint::before {
     content: '';
     position: absolute;
-    width: 2px; /* Ancho de la línea */
-    background-color: gray; /* Color de la línea */
-    top: -19px; /* Inicia justo debajo del punto */
-    bottom: -145px; /* Termina justo antes del siguiente punto, ajusta según el espaciado */
-    left: 40%; /* Centra la línea con respecto al punto */
-    z-index: -1; /* La línea debe ir detrás del punto */
+    width: 2px; 
+    background-color: gray; 
+    top: -19px; 
+    bottom: -145px; 
+    left: 40%; 
+    z-index: -1; 
 }
 .point {
     width: 10px;
     height: 10px;
-    background-color: rgb(207, 18, 250); /* Cambiar el color según tu diseño */
+    background-color: rgb(207, 18, 250); 
     border-radius: 50%;
     position: relative;
-    z-index: 1; /* Asegúrate de que el punto esté por encima de la línea */
-    box-shadow: 0 0 25px rgba(246, 5, 238, 1), /* Sombra exterior brillante */
-                0 0 50px rgba(246, 8, 238, 1); /* Sombra exterior difusa */
-    transform: scale(1.2); /* Hace que el punto sea un poco más grande */
-    border: 1px solid rgb(207, 81, 227); /* Borde blanco semi-transparente para un efecto brillante */
-    transition: all 0.3s ease; /* Transiciones suaves */
+    z-index: 1; 
+    box-shadow: 0 0 25px rgba(246, 5, 238, 1), 
+                0 0 50px rgba(246, 8, 238, 1); 
+    transform: scale(1.2); 
+    border: 1px solid rgb(207, 81, 227); 
+    transition: all 0.3s ease; 
 }
 
-/* Asegúrate de que el año también esté alineado correctamente */
+
 .left-timeline {
     display: flex;
     flex-direction: row;
-    align-items: flex-start; /* Alinear el año en la parte superior */
-    margin-right: 20px; /* Espacio entre el año y el punto/línea */
+    align-items: flex-start; 
+    margin-right: 20px; 
 }
 
 .left-timeline p {
@@ -77,6 +77,9 @@
   
   .description h3 {
     margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
   
   .description p {
@@ -122,14 +125,15 @@
       margin-bottom: 10vh;
       position: relative;
       min-width: 100%;
+      margin-bottom: 40px;
   }
 
   .left-timeline {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    min-width: 20%;
     padding-right: 1%;
+    margin: 0%;
   
 }
   .description {
@@ -148,20 +152,15 @@
   text-align: left;
 }
 
-.left-timeline p {
-
-  padding: 5%;
-  
-}
 
 .linepoint::before {
   content: '';
   position: absolute;
-  width: 2px; /* Ancho de la línea */
-  background-color: gray; /* Color de la línea */
-  top: -19px; /* Inicia justo debajo del punto */
-  bottom: -308px; /* Termina justo antes del siguiente punto, ajusta según el espaciado */
-  left: 40%; /* Centra la línea con respecto al punto */
-  z-index: -1; /* La línea debe ir detrás del punto */
+  width: 2px; 
+  background-color: gray; 
+  top: -19px; 
+  height: 520px; 
+  left: 40%; 
+  z-index: -1; 
 }
   }

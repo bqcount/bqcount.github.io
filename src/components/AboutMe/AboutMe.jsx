@@ -3,13 +3,13 @@
 import "./AboutMe.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'; // Correo electrónico
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'; 
 import { useState } from "react";
 
 function AboutMe() {
   const email= "bqcount@gmail.com"
 
-  const [toastMessage, setToastMessage] = useState(""); // Mensaje para el toast
+  const [toastMessage, setToastMessage] = useState(""); 
 
   const handleEmailClick = (e) => {
     e.preventDefault();
@@ -19,19 +19,19 @@ function AboutMe() {
     const emailWindow = window.open(emailUrl, "_blank");
 
     if (emailWindow) {
-      // Si la aplicación de correo se abre correctamente
+     
       emailWindow.focus();
     } else {
-      // Si no se puede abrir la app de correo, copiar el email al portapapeles
+     
       navigator.clipboard.writeText(email).then(
         () => {
-          setToastMessage("Email copiado al portapapeles!"); // Mostrar mensaje de éxito
+          setToastMessage("Email copiado al portapapeles!"); 
           setTimeout(() => {
-            setToastMessage(""); // Ocultar el mensaje después de 3 segundos
+            setToastMessage(""); 
           }, 3000);
         },
         () => {
-          setToastMessage("No se pudo copiar el email. Inténtalo manualmente."); // Mensaje de error
+          setToastMessage("No se pudo copiar el email. Inténtalo manualmente."); 
         }
       );
     }
@@ -41,7 +41,7 @@ function AboutMe() {
       <header className="sr-only" id="about-me-heading">About Me</header>
       
       <div className="content-left">
-        <img src="public/assets/me.jpeg" alt="Daniela Romero" className="me-image" />
+        <img src="\assets\me.jpeg" alt="Daniela Romero" className="me-image" />
         <div className="icons-div">
           <a className="link-header" href="https://github.com/bqcount" aria-label="GitHub">
             <FontAwesomeIcon icon={faGithub} size="2x" />
@@ -49,12 +49,12 @@ function AboutMe() {
           <a className="link-header" href="https://www.linkedin.com/in/daniela-romero-garcia/" aria-label="LinkedIn">
             <FontAwesomeIcon icon={faLinkedin} size="2x" />
           </a>
-          <a className="link-header" href="mailto:daniela@example.com" aria-label="Email"
+          <a className="link-header" href="mailto:bqcount@gmail.com" aria-label="Email"
            onClick={handleEmailClick}
           >
             <FontAwesomeIcon icon={faEnvelope} size="2x" />
           </a>
-          {toastMessage && <div className="toast">{toastMessage}</div>} {/* Toast message */}
+          {toastMessage && <div className="toast">{toastMessage}</div>} {}
         </div>
       </div>
 
