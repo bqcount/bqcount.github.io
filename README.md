@@ -24,8 +24,9 @@ You can view my portfolio live at the following link:
 
 ## 📸 Screenshots
 
-![Portfolio Screenshot](https://via.placeholder.com/600x300)
+![image](https://github.com/user-attachments/assets/ba4996f4-410c-4b31-9b56-d3670152da44)
+
 
 ## ✨ About Me
 
-I'm **Daniela Romero**, a passionate **Web Developer** specializing in modern web technologies. Check out my [portfolio](https://your-deployed-portfolio-url.com) to see more of my work!
+I'm **Daniela Romero**, a passionate **Web Developer** specializing in modern web technologies. Check out my [portfolio](https://bqcount.github.io/) to see more of my work!
