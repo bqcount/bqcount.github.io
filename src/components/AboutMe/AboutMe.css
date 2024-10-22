@@ -131,7 +131,12 @@
       margin-bottom: 20%;
     }
   
-  
+    .icons-div a:hover {
+      
+      box-shadow: none;
+      transform: none;
+      transition: none;
+    }
   
     
   }
