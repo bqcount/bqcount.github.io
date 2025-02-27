@@ -3,7 +3,7 @@ import "./Experience.css";
 function Experience() {
   const experiences = [
     {
-      year: "Apr 2024-Oct 2024", 
+      year: "Apr 2024-Currently", 
       title: "Junior Developer",
       company: "Binhex Solutions",
       description:
