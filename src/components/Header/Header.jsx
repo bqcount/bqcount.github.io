@@ -13,6 +13,9 @@ function Header() {
       <Link to='/' className='link-header'>
         <h3 className='linterna'>Home</h3>
       </Link>
+      <Link to='/training' className='link-header'>
+        <h3 className='linterna'>Training</h3>
+      </Link>
       <Link to='/experience' className='link-header'>
         <h3 className='linterna'>Experience</h3>
       </Link>

@@ -1,0 +1,168 @@
+
+
+
+.content-timeline {
+   
+    display: flex;
+    flex-direction: column; 
+   
+  }
+  
+  .experience-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+    justify-content: left;
+    margin-bottom: 40px; 
+    position: relative;
+  }
+  
+  .linepoint {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px; 
+    height: 150px; 
+    position: relative;
+  }
+  .linepoint::before {
+    content: '';
+    position: absolute;
+    width: 2px; 
+    background-color: gray; 
+    top: -19px; 
+    bottom: -145px; 
+    left: 40%; 
+    z-index: -1; 
+}
+.point {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(207, 18, 250); 
+    border-radius: 50%;
+    position: relative;
+    z-index: 1; 
+    box-shadow: 0 0 25px rgba(246, 5, 238, 1), 
+                0 0 50px rgba(246, 8, 238, 1); 
+    transform: scale(1.2); 
+    border: 1px solid rgb(207, 81, 227); 
+    transition: all 0.3s ease; 
+}
+
+
+.left-timeline {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+    margin-right: 20px; 
+}
+
+.left-timeline p {
+    margin: 0;
+    padding: 0;
+    color: gray; 
+    width: 15vw;
+}
+  
+  
+  
+  .description {
+    flex-basis: 50%;
+  }
+  
+  .description h2 {
+    color: rgb(246, 8, 238, 1); /* Cambiar color según tu diseño */
+    margin: 0;
+  }
+  
+  .description h3 {
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .description p {
+    margin: 5px 0;
+    color: #f0f0f0; /* Cambiar según el diseño */
+    text-align: justify;
+  }
+  #laboral-experience{
+
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    padding-bottom: 5%;
+  }
+  #company{
+
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  
+  }
+
+
+  .exp-title {
+    background-image: url("../../assets/background-gradient-lights.jpg") ;
+    background-size: cover ;
+    background-clip: text ;
+    -webkit-background-clip: text !important;
+    color: transparent !important;
+    margin: 1%;
+    background-position: 30% 70%;
+  }
+  
+  @media (min-width: 344px) and (max-width: 596px) {
+    .content-timeline {
+   
+      display: flex;
+      flex-direction: column; /* Asegura que los hijos se apilen verticalmente */
+      padding: 0 0 0 0;
+    }
+    
+    .experience-content {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-between;
+      position: relative;
+      min-width: 100%;
+      margin-bottom: 233px; 
+  }
+
+  .left-timeline {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-right: 0;
+    margin: 0%;
+    margin-right: 0; 
+  
+}
+  .description {
+   
+    margin: 0%;
+    min-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 335px;
+}
+.description p{
+  text-align: left;
+}
+.exp-title{
+  text-align: left;
+}
+
+
+.linepoint::before {
+  content: '';
+  position: absolute;
+  width: 2px; 
+  background-color: gray; 
+  top: -19px; 
+  height: 520px; 
+  left: 40%; 
+  z-index: -1; 
+}
+}
+  
